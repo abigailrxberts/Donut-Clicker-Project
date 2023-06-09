@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+
+.expand, .modal{
+    display: none;
+}
+
+#close-modal{
+    cursor: pointer;
+}
