@@ -2,10 +2,109 @@
     margin: 0;
 }
 
+body {
+    background-color: #BEB8EB;
+}
+main, footer {
+    background-color: #9284FA;
+}
+
+.header {
+    border: black solid 5px;
+    border-radius: 25px;
+}
+
+#bakerInformation, #inspireInformation{
+    width: 15%;
+    border: black solid 5px;
+    text-align: center;
+    background-color: #6B6570;
+    color: white;
+    padding: 20px;
+}
+
+#bakerInformation {
+    height: 30%;
+}
+
 .expand, .modal{
     display: none;
 }
 
+.navBtn, #resetBtn {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: "Inter" ,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.navBtn:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.navBtn:hover {
+    background-color: #5439C1;
+    border-color: white;
+    color: white;
+}
+
 #close-modal{
     cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+}
+
+.modal-content{
+    background-color: lightblue;
+    margin: 30% auto;
+    width: 100%;
+}
+
+#modalParagraph {
+    background-color: lightblue;
+}
+
+#donutBtn {
+    background: none;
+    border: none;
+}
+
+.click {
+    justify-content: auto;
+}
+
+.footer {
+    text-align: center;
 }
