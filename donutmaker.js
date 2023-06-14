@@ -6,10 +6,10 @@ document.getElementById('donutBtn').addEventListener('click', donutClick);
 document.getElementById('autoBtn').addEventListener('click', buyAutoClicker);
 document.getElementById('autoBtn').disabled = true;
 
-// updateDisplay();
+updateDisplay();
 
 function donutClick() {
-    ++donutCount;
+    donutCount++;
     updateDisplay();
 }
 
@@ -47,3 +47,4 @@ function resetGame() {
 
     updateDisplay();
 }
+// autoclicker still clicking when reset. need to find a way to fix this still

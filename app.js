@@ -13,6 +13,7 @@ function expandButton() {
 }
 
 let modal = document.getElementById("myModal");
+let body = document.body;
 document.getElementById("contactSection").addEventListener('click', modalBtn);
 document.getElementById("close-modal").addEventListener('click', closeModal);
 
@@ -23,6 +24,19 @@ function modalBtn() {
         modal.style.display = "none";
     }
 }
+
+// document.getElementById('contactMe').addEventListener('click', changeBgColor)
+
+// function changeBgColor() {
+//     body.style.backgroundColor = 'red';
+//     // modal.disabled = true;
+// }
+
+// // function resetBackgroundColor() {
+// //     body.style.backgroundColor = "";
+// //     modal.disabled = false;
+// // }
+
 
 function closeModal() {
     modal.style.display = "none";

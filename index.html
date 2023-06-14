@@ -10,83 +10,75 @@
     <title>Donut Clicker</title>
 </head>
 
-<body class="container">
-    <header>
-
-        <nav class="nav nav-1">
-
-            <div class="nav-section">
-                <button id="fredSection">Fred the Baker Baking Company</button>
-                <div id="fred" class="expand">
-                    <p>
-                        Our company was founded on the basis that everyone should have equal access to quality,
-                        delicious donuts no matter their dietary restrictions.
-                        Our donuts are free from the <strong>eight major allergens</strong> including <strong>milk,
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav nav-1">
+                <section class="nav-section1">
+                    <button id="fredSection" class="navBtn">Fred the Baker Baking Company</button>
+                    <div id="fred" class="expand">
+                        <p id="bakerInformation">
+                            Our company was founded on the basis that everyone should have equal access to quality,
+                            delicious donuts no matter their dietary restrictions. Our donuts are free from the
+                            <strong>eight major allergens</strong> including <strong>milk,
                             eggs, fish, shellfish, tree nuts, peanuts, wheat,
-                            and soybeans.</strong> Everyone is welcome at Fred the Baker Baking Company!
-                    </p>
-                </div>
-            </div>
-
-            <div class="nav-section">
-                <button id="inspirationSection">Our Inspiration</button>
-                <div id="inspiration" class="expand">
-                    <p>
-                        This donut clicker game would not have been made possible if not for the game Cookie Clicker,
-                        which you can learn more about
-                        <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="noopener">here!</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="nav-section">
-                <button id="contactSection">Contact the Creator</button>
-                <div id="myModal" class="modal">
-                    <div id="contact" class="modal-content">
-                        <span id="close-modal">&times;</span>
-                        <header>Creator Information</header>
-                        <p>
-                            I (Abigail Roberts) am a recent graduate of Eastern Kentucky University with a bachelor's
-                            degree
-                            in forensic biology. My true love lies in computer science,
-                            and am now attending We Can Code IT's web development bootcamp to make my dreams a reality.
-                            Below you can find links to my portfolio and my GitHub page!
+                            and soybeans.</strong> Everyone is welcome at Fred the Baker Baking Company! We have created this virtual donut clicker game so that everyone can simulate the creation of delicious donuts no matter where they are in the world!
                         </p>
-                        <button id="gitBtn">
-                            <a href="https://github.com/abigailrxberts"></a>GitHub
-                        </button>
-                        <!-- ADD LINK to pORTFOLIO. -->
                     </div>
-                </div>
-            </div>
-
-        </nav>
-
-    </header>
-
-    <main>
-        <section class="click">
-            <p id="counter">
-                Donuts Made: <span id="donut-display">0</span>
-            </p>
-            <button id="donutBtn">Click to Make Donuts!</button>
-        </section>
-
-        <section class="auto-click">
-            <p id="auto-counter">Auto Clickers Purchased: <span id="auto-display">0</span></p>
-            <button id="autoBtn">Click to Purchase an Auto Clicker!</button>
-            <p>Cost: <span id="auto-cost">0</span></p>
-        </section>
-
-        <section class="reset">
-            <button id="resetBtn">Reset Game</button>
-        </section>
-
-    </main>
+                </section>
+                <section class="nav-section2">
+                    <button id="inspirationSection" class="navBtn">Our Inspiration</button>
+                    <div id="inspiration" class="expand">
+                        <p id="inspireInformation">
+                            This donut clicker game would not have been made possible if not for the game Cookie
+                            Clicker,
+                            which you can learn more about
+                            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="noopener">here!</a>
+                        </p>
+                    </div>
+                </section>
+                <section class="nav-section3">
+                    <button id="contactSection" id="contactMe" class="navBtn">Contact the Creator</button>
+                    <div id="myModal" class="modal">
+                        <div id="contact" class="modal-content">
+                            <span id="close-modal">&times;</span>
+                            <header>Creator Information</header>
+                            <p id="modalParagraph">
+                                I (Abigail Roberts) am a recent graduate of Eastern Kentucky University with a bachelor's degree
+                                in forensic biology. My true love lies in computer science,
+                                and am now attending We Can Code IT's web development bootcamp to make my dreams a
+                                reality. Below you can find links to my portfolio and my GitHub page!
+                                <a href="https://github.com/abigailrxberts">GitHub</a>
+                            </p>
+                            <!-- ADD LINK to pORTFOLIO. -->
+                        </div>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <main class="mainSection">
+            <section class="click">
+                <h1 id="donutHeader">Click the Donut Below to Make More Donuts!</h1>
+                <p id="counter">
+                    Donuts Made: <span id="donut-display">0</span>
+                </p>
+                <button id="donutBtn"><img src="donut.png" alt="donut"></button>
+            </section>
+            <section class="auto-click">
+                <p id="auto-counter">Bakers Hired: <span id="auto-display">0</span></p>
+                <button id="autoBtn">Click to Hire a Baker!</button>
+                <p>Cost: <span id="auto-cost">0</span></p>
+            </section>
+            <section class="reset">
+                <button id="resetBtn">Reset Game</button>
+            </section>
+            <footer class="footer">
+                <p>Abigail Roberts</p>
+                <p>We Can Code IT 2023</p>
+            </footer>
+        </main>
+    </div>
     <script src="app.js"></script>
     <script src="donutmaker.js"></script>
 </body>
-
-</html>
-
 </html>
