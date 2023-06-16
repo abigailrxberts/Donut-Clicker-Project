@@ -1,6 +1,8 @@
 let autoClickerCost = 100;
 let donutCount = 0;
 let autoClickerCount = 0;
+let intervalId;
+let intervalId_array = []
 
 document.getElementById('donutBtn').addEventListener('click', donutClick);
 document.getElementById('autoBtn').addEventListener('click', buyAutoClicker);
@@ -18,11 +20,13 @@ function buyAutoClicker() {
     autoClickerCount++;
     autoClickerCost = Math.round(autoClickerCost * 1.1)
 
-    setInterval((x) => {
+    intervalId = setInterval((x) => {
         donutCount++;
         updateDisplay();
     }, 1000);
 
+    intervalId_array.push(intervalId);
+    
     updateDisplay();
 }
 
@@ -33,10 +37,15 @@ function updateDisplay() {
 
     if (donutCount >= autoClickerCost) {
         document.getElementById('autoBtn').disabled = false;
+        autoBtn.style.backgroundColor = '#fee6e3';
+        autoBtn.style.cursor = 'pointer';
     } else {
         document.getElementById('autoBtn').disabled = true;
+        autoBtn.style.backgroundColor = 'grey';
+        autoBtn.style.cursor = 'not-allowed';
     }
 }
+
 
 document.getElementById('resetBtn').addEventListener('click', resetGame);
 
@@ -45,6 +54,9 @@ function resetGame() {
     donutCount = 0;
     autoClickerCount = 0;
 
+    for (var i = 0; i < intervalId_array.length; i++) {
+        clearInterval(intervalId_array[i]);
+    }
+
     updateDisplay();
 }
-// autoclicker still clicking when reset. need to find a way to fix this still

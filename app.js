@@ -4,7 +4,6 @@ document.getElementById("inspirationSection").addEventListener('click', expandBu
 function expandButton() {
     let content = this.nextElementSibling;
 
-    // First time through display is empty string, after first time, it will be either "none" or "block"
     if (content.style.display === "" || content.style.display === "none") {
         content.style.display = "block";
     } else {
@@ -13,9 +12,8 @@ function expandButton() {
 }
 
 let modal = document.getElementById("myModal");
-let body = document.body;
 document.getElementById("contactSection").addEventListener('click', modalBtn);
-document.getElementById("close-modal").addEventListener('click', closeModal);
+document.getElementById("closeModal").addEventListener('click', closeModal);
 
 function modalBtn() {
     if (modal.style.display === "" || modal.style.display === "none") {
@@ -24,19 +22,6 @@ function modalBtn() {
         modal.style.display = "none";
     }
 }
-
-// document.getElementById('contactMe').addEventListener('click', changeBgColor)
-
-// function changeBgColor() {
-//     body.style.backgroundColor = 'red';
-//     // modal.disabled = true;
-// }
-
-// // function resetBackgroundColor() {
-// //     body.style.backgroundColor = "";
-// //     modal.disabled = false;
-// // }
-
 
 function closeModal() {
     modal.style.display = "none";
