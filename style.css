@@ -64,9 +64,6 @@ main, footer {
     position: relative;
     text-align: center;
     text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
 }
 
 .navBtn:after {
@@ -80,7 +77,6 @@ main, footer {
     position: absolute;
     top: -2px;
     transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
     z-index: -1;
 }
 
